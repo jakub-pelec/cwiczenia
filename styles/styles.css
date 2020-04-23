@@ -1,0 +1,20 @@
+div {
+    background-color: yellow;
+}
+
+#tomek {
+    background-color: red;
+    text-align: center;
+    width: 50%;
+}
+
+.marek {
+    background-color: red;
+    border: 2px solid blue;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.dupa {
+    background-color: #a1ffa5;
+}
