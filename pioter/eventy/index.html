@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>DUPA</title>
 </head>
 <body>
-    <div>
-        <input type="text" id="input">
-        <span><button id="submit">Zatwierdź</button></span>
-        <div>
-            <span> Wpisany tekst: </span>
-            <span id="tekst"></span>
+    <div id="main-div">
+        <h1>Some Shit</h1>
+        <div id="input-div">
+            <input type="text" id="input">
+            <span><button id="submit">Zatwierdź</button></span>
+            <div>
+                <span class="text"> Wpisany tekst: </span>
+                <span class="text" id="tekst"></span>
+            </div>
         </div>
+        <div>
+            <span class="text">Counter: </span>
+            <span class="text" id="licznik">0</span>
+            <div>
+                <button id="przycisk">+1</button>
+                <button id="clear">clear</button>
+            </div>
+            
+        </div>
+    
     </div>
-    <div>
-        <span>Counter: </span>
-        <span id="licznik">0</span>
-        <span><button id="przycisk">+1</button></span>
-        <span><button id="clear">clear</button></span>
-    </div>
-
     <script src='./app.js' defer></script>
 </body>
 </html>

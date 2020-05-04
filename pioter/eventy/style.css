@@ -1,0 +1,15 @@
+html{
+    background-color: darkgoldenrod;
+}
+
+#main-div{
+    text-align: center;
+}
+
+#input-div{
+    padding: 3rem;
+}
+
+.text{
+    font-size: 3rem;
+}

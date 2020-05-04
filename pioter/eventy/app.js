@@ -4,7 +4,7 @@ const button = document.querySelector("#przycisk");
 const text = document.querySelector("#tekst");
 const clear = document.querySelector("#clear");
 const submit = document.querySelector("#submit");
-let textToShow;
+let textToShow = "";
 
 clear.addEventListener("click",(event) => {
     licznik.innerHTML = 0;
