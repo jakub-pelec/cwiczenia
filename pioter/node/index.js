@@ -8,7 +8,11 @@ const asyncFunction = async () => {
     const data = await axios.get("https://jsonplaceholder.typicode.com/posts");
     const usersTab = data.data;
     const usersTabFiltered = usersTab.filter(isIdBiggerThan60);
-    console.log(usersTabFiltered);
+    return usersTabFiltered;
+};
+const printData = async (asyncFunction) => {
+    const usersTabWithPostsIdBiggerThan60 = await asyncFunction();
+    console.log(usersTabWithPostsIdBiggerThan60);
 };
 
-asyncFunction();
+printData(asyncFunction);
