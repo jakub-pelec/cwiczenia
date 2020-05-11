@@ -15,4 +15,16 @@ const printData = async (asyncFunction) => {
     console.log(usersTabWithPostsIdBiggerThan60);
 };
 
-printData(asyncFunction);
+//printData(asyncFunction);
+
+const asyncFunctionUsers = async () => {
+    const data = await axios.get("https://jsonplaceholder.typicode.com/users");
+    usersTab = data.data;
+    usersTabFiltered = usersTab.filter((element)=> element.id > 5);
+    usersTabMapped = usersTabFiltered.map((element)=>{
+        return {name: element.name, email: element.email}
+    })
+    console.log(usersTabMapped);
+}
+
+asyncFunctionUsers();
