@@ -13,7 +13,7 @@ const generateObject = () => {
             name,
             surname,
             age,
-            whereBorn,
+            whereBorn
         }
     };
 };
